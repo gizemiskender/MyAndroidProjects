@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.seekbar.MainActivity" >
+
+    <item
+        android:id="@+id/aboutUs"
+        android:alphabeticShortcut="a"
+        android:numericShortcut="1"
+        android:title="About Us"
+        android:icon="@drawable/info_black"/>
+    <item
+        android:id="@+id/preference"
+        android:title="Preference"
+        android:icon="@drawable/settings"/>
+    <item
+        android:id="@+id/exit"
+        android:title="Exit"
+        android:icon="@drawable/fileclose"/>
+
+</menu>
