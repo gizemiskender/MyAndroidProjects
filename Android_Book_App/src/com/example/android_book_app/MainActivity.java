@@ -19,27 +19,22 @@ public class MainActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		initilaze();
-		
+		save = (Button) findViewById(R.id.bSave);
+		etname = (EditText) findViewById(R.id.etName);
+		etlastname = (EditText) findViewById(R.id.etLastname);
+
 		save.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
-				
+
 				String nameText = etname.getText().toString();
 				String lastnameText = etlastname.getText().toString();
 				String mesaj = "Merhaba" + nameText + " " + lastnameText + "!";
-				Toast.makeText(MainActivity.this, mesaj, Toast.LENGTH_LONG).show();
+				Toast.makeText(MainActivity.this, mesaj, Toast.LENGTH_LONG)
+						.show();
 			}
 		});
 	}
-
-	private void initilaze() {
-		save = (Button) findViewById(R.id.bSave);
-		 EditText etname = (EditText) findViewById(R.id.etName);
-		 EditText etLastName = (EditText) findViewById(R.id.etLastname);
-
-	}
-	
 
 }
