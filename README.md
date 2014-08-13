@@ -1,4 +1,4 @@
 MyAndroidProjects
 =================
 
-My android application startup
+My android startup application 
